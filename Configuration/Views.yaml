@@ -1,0 +1,6 @@
+-
+  requestFilter: 'isPackage("Sandstorm.Newsletter") && isController("ReceiverGroupModule")'
+  options:
+    partialRootPaths:
+      Sandstorm.Newsletter: 'resource://Sandstorm.Newsletter/Private/Partials'
+      Ttree.JsonStore.NewsletterReveiverSource: 'resource://Ttree.JsonStore.NewsletterReveiverSource/Private/Partials'

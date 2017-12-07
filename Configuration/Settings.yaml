@@ -1,0 +1,6 @@
+Sandstorm:
+  Newsletter:
+    receiverSourceTypes:
+      'TtreeJsonStore':
+        label: JSON Store
+        className: \Ttree\JsonStore\NewsletterReveiverSource\Domain\Model\JsonStoreReceiverSource
