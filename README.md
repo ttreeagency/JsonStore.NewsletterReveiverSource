@@ -1,4 +1,4 @@
-# A ReceiverGroup for Sandstorm Newsletter based on our JSON Store
+# A ReceiverSource for Sandstorm Newsletter based on our JSON Store
 
 ## Acknowledgments
 

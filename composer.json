@@ -1,5 +1,5 @@
 {
-    "description": "A ReceiverGroup for Sandstorm Newsletter based on our JSON Store",
+    "description": "A ReceiverSource for Sandstorm Newsletter based on our JSON Store",
     "type": "neos-package",
     "name": "ttree/jsonstore-newsletterreveiversource",
     "license": "MIT",
