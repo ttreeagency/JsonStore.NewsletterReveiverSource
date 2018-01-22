@@ -54,8 +54,7 @@ class JsonStoreReceiverSource extends ReceiverSource
         $offset = 0;
         $documentCount = $this->store->count($this->documentType);
         $limit = 10;
-        $pages = ceil($documentCount / $limit);
-        while ($offset < $pages) {
+        while ($offset < $documentCount) {
             /** @var Document $document */
             foreach ($this->store->paginate($this->documentType, $offset, $limit) as $document) {
                 $data = $document->getData();
@@ -64,7 +63,7 @@ class JsonStoreReceiverSource extends ReceiverSource
                 }
                 $output[md5($data['email'])] = json_encode($data);
             }
-            $offset++;
+            $offset = $offset + $limit;
         }
 
         Files::createDirectoryRecursively(dirname($this->getSourceFileName()));
